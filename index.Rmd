@@ -1,17 +1,38 @@
 --- 
-title: "A Minimal Book Example"
-author: "John Doe"
+title: "A Proposed Data Standard for Municipal Zoning Regulations"
+author:
+  - name: Carole Turley Voulgaris
+    email: cvoulgaris@gsd.harvard.edu
+    affiliation: Harvard Graduate School of Design
+    footnote: 1
+  - name: Paul Salama
+    email: paul.clearroad@gmail.com
+    affiliation: Cornell University
+  - name: Luke Reeve
+    email: lukereeve@mde.harvard.edu
+    affiliation: Harvard Graduate School of Design
+  - name: Elizabeth Christoforetty
+    email: echristo@gsd.harvard.edu
+    affiliation: Harvard Graduate School of Design
+address:
+  - code:  Harvard
+    address: Harvard Graduate School of Design, 48 Quincy St, Cambridge, Massachussetts 02138
+  - code: 1
+    text: "Corresponding Author"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-documentclass: book
-bibliography: [book.bib, packages.bib]
-# url: your book url like https://bookdown.org/yihui/bookdown
-# cover-image: path to the social sharing image like images/cover.jpg
-description: |
-  This is a minimal example of using the bookdown package to write a book.
-  The HTML output format for this example is bookdown::gitbook,
-  set in the _output.yml file.
-link-citations: yes
+documentclass: article
+journal: "Environment and Planning B"
+bibliography: [book.bib]
+layout: "3p, authoryear, review"
+keywords:
+  - Accessibility
+  - Passive Data
+  - Location Choice
+  - Parks
+abstract: |
+ About 200 words. Unclear about if there is a limit 
+description: "Open Zoning"
 github-repo: c-voulgaris/ozfs-paper
 ---
 

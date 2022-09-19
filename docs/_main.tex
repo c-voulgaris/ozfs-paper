@@ -3,7 +3,7 @@
 \PassOptionsToPackage{hyphens}{url}
 %
 \documentclass[
-]{book}
+]{article}
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
 \usepackage{iftex}
@@ -36,8 +36,8 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-  pdftitle={A Minimal Book Example},
-  pdfauthor={John Doe},
+  pdftitle={A Proposed Data Standard for Municipal Zoning Regulations},
+  pdfkeywords={Accessibility, Passive Data, Location Choice, Parks},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
@@ -115,133 +115,61 @@
 \usepackage[]{natbib}
 \bibliographystyle{plainnat}
 
-\title{A Minimal Book Example}
-\author{John Doe}
+\title{A Proposed Data Standard for Municipal Zoning Regulations}
+\author{true \and true \and true \and true}
 \date{2022-09-19}
 
-\usepackage{amsthm}
-\newtheorem{theorem}{Theorem}[chapter]
-\newtheorem{lemma}{Lemma}[chapter]
-\newtheorem{corollary}{Corollary}[chapter]
-\newtheorem{proposition}{Proposition}[chapter]
-\newtheorem{conjecture}{Conjecture}[chapter]
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[chapter]
-\theoremstyle{definition}
-\newtheorem{example}{Example}[chapter]
-\theoremstyle{definition}
-\newtheorem{exercise}{Exercise}[chapter]
-\theoremstyle{definition}
-\newtheorem{hypothesis}{Hypothesis}[chapter]
-\theoremstyle{remark}
-\newtheorem*{remark}{Remark}
-\newtheorem*{solution}{Solution}
 \begin{document}
 \maketitle
+\begin{abstract}
+About 200 words. Unclear about if there is a limit
+\end{abstract}
 
 {
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{2}
 \tableofcontents
 }
-\hypertarget{about}{%
-\chapter{About}\label{about}}
+Introductory paragraphs
 
-This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports; for example, a math equation \(a^2 + b^2 = c^2\).
+\hypertarget{literature-review}{%
+\section{Literature review}\label{literature-review}}
 
-\hypertarget{usage}{%
-\section{Usage}\label{usage}}
+Introduce the literature review
 
-Each \textbf{bookdown} chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter \emph{must} start with a first-level heading: \texttt{\#\ A\ good\ chapter}, and can contain one (and only one) first-level heading.
+\hypertarget{prior-and-current-efforts-to-digitize-zoning-data}{%
+\subsection{Prior and current efforts to digitize zoning data}\label{prior-and-current-efforts-to-digitize-zoning-data}}
 
-Use second-level and higher headings within chapters like: \texttt{\#\#\ A\ short\ section} or \texttt{\#\#\#\ An\ even\ shorter\ section}.
+Describe the National Zoning Atlas and affiliated teams, MAPC data, the Georgia Tech
+effort. Others?
 
-The \texttt{index.Rmd} file is required, and is also your first book chapter. It will be the homepage when you render the book.
+\hypertarget{other-open-data-standards-for-local-government}{%
+\subsection{Other open data standards for local government}\label{other-open-data-standards-for-local-government}}
 
-\hypertarget{render-book}{%
-\section{Render book}\label{render-book}}
+Describe GTFS, GBFS, MDS, OpenStreetMap others? Are there any examples not in mobility?
 
-You can render the HTML version of this example book without changing anything:
+\hypertarget{method}{%
+\section{Method}\label{method}}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  Find the \textbf{Build} pane in the RStudio IDE, and
-\item
-  Click on \textbf{Build Book}, then select your output format, or select ``All formats'' if you'd like to use multiple formats from the same book source files.
-\end{enumerate}
+This section describes the zoning standard and the analysis method. This will be the
 
-Or build the book from the R console:
+\hypertarget{zoning-standard}{%
+\subsection{Zoning standard}\label{zoning-standard}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{bookdown}\SpecialCharTok{::}\FunctionTok{render\_book}\NormalTok{()}
-\end{Highlighting}
-\end{Shaded}
+Describe the zoning standard
 
-To render this example to PDF as a \texttt{bookdown::pdf\_book}, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
+\hypertarget{analysis-of-accessory-dwelling-unit-capacity}{%
+\subsection{Analysis of accessory dwelling unit capacity}\label{analysis-of-accessory-dwelling-unit-capacity}}
 
-\hypertarget{preview-book}{%
-\section{Preview book}\label{preview-book}}
+Describe both a naive approach that would be the best you can do with other methods
+and the approach we could take with this data.
 
-As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in ``Preview book'', or from the R console:
+\hypertarget{naive-approach}{%
+\subsubsection{Naive approach}\label{naive-approach}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{bookdown}\SpecialCharTok{::}\FunctionTok{serve\_book}\NormalTok{()}
-\end{Highlighting}
-\end{Shaded}
+Best you could do with a spreadsheet
 
-\hypertarget{hello-bookdown}{%
-\chapter{Hello bookdown}\label{hello-bookdown}}
-
-All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (\texttt{\#}) per .Rmd file.
-
-\hypertarget{a-section}{%
-\section{A section}\label{a-section}}
-
-All chapter sections start with a second-level (\texttt{\#\#}) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
-
-\hypertarget{an-unnumbered-section}{%
-\subsection*{An unnumbered section}\label{an-unnumbered-section}}
-\addcontentsline{toc}{subsection}{An unnumbered section}
-
-Chapters and sections are numbered by default. To un-number a heading, add a \texttt{\{.unnumbered\}} or the shorter \texttt{\{-\}} at the end of the heading, like in this section.
-
-\hypertarget{cross}{%
-\chapter{Cross-references}\label{cross}}
-
-Cross-references make it easier for your readers to find and link to elements in your book.
-
-\hypertarget{chapters-and-sub-chapters}{%
-\section{Chapters and sub-chapters}\label{chapters-and-sub-chapters}}
-
-There are two steps to cross-reference any heading:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Label the heading: \texttt{\#\ Hello\ world\ \{\#nice-label\}}.
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Leave the label off if you like the automated heading generated based on your heading title: for example, \texttt{\#\ Hello\ world} = \texttt{\#\ Hello\ world\ \{\#hello-world\}}.
-  \item
-    To label an un-numbered heading, use: \texttt{\#\ Hello\ world\ \{-\#nice-label\}} or \texttt{\{\#\ Hello\ world\ .unnumbered\}}.
-  \end{itemize}
-\item
-  Next, reference the labeled heading anywhere in the text using \texttt{\textbackslash{}@ref(nice-label)}; for example, please see Chapter \ref{cross}.
-
-  \begin{itemize}
-  \tightlist
-  \item
-    If you prefer text as the link instead of a numbered reference use: \protect\hyperlink{cross}{any text you want can go here}.
-  \end{itemize}
-\end{enumerate}
-
-\hypertarget{captioned-figures-and-tables}{%
-\section{Captioned figures and tables}\label{captioned-figures-and-tables}}
+\hypertarget{proposed-approach}{%
+\subsubsection{Proposed approach}\label{proposed-approach}}
 
 Figures and tables \emph{with captions} can also be cross-referenced from elsewhere in your book using \texttt{\textbackslash{}@ref(fig:chunk-label)} and \texttt{\textbackslash{}@ref(tab:chunk-label)}, respectively.
 
@@ -297,103 +225,22 @@ temperature & pressure\\
 \end{tabular}
 \end{table}
 
-\hypertarget{parts}{%
-\chapter{Parts}\label{parts}}
+\hypertarget{results}{%
+\section{Results}\label{results}}
 
-You can add parts to organize one or more book chapters together. Parts can be inserted at the top of an .Rmd file, before the first-level chapter heading in that same file.
+This section will show the ADU capacity of a place based on the two approaches
+described in the methods section.
 
-Add a numbered part: \texttt{\#\ (PART)\ Act\ one\ \{-\}} (followed by \texttt{\#\ A\ chapter})
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
 
-Add an unnumbered part: \texttt{\#\ (PART\textbackslash{}*)\ Act\ one\ \{-\}} (followed by \texttt{\#\ A\ chapter})
+This will be the discussion section
 
-Add an appendix as a special kind of un-numbered part: \texttt{\#\ (APPENDIX)\ Other\ stuff\ \{-\}} (followed by \texttt{\#\ A\ chapter}). Chapters in an appendix are prepended with letters instead of numbers.
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
 
-\hypertarget{footnotes-and-citations}{%
-\chapter{Footnotes and citations}\label{footnotes-and-citations}}
+This will be the conclusion
 
-\hypertarget{footnotes}{%
-\section{Footnotes}\label{footnotes}}
-
-Footnotes are put inside the square brackets after a caret \texttt{\^{}{[}{]}}. Like this one \footnote{This is a footnote.}.
-
-\hypertarget{citations}{%
-\section{Citations}\label{citations}}
-
-Reference items in your bibliography file(s) using \texttt{@key}.
-
-For example, we are using the \textbf{bookdown} package \citep{R-bookdown} (check out the last code chunk in index.Rmd to see how this citation key was added) in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015} (this citation was added manually in an external file book.bib).
-Note that the \texttt{.bib} files need to be listed in the index.Rmd with the YAML \texttt{bibliography} key.
-
-The RStudio Visual Markdown Editor can also make it easier to insert citations: \url{https://rstudio.github.io/visual-markdown-editing/\#/citations}
-
-\hypertarget{blocks}{%
-\chapter{Blocks}\label{blocks}}
-
-\hypertarget{equations}{%
-\section{Equations}\label{equations}}
-
-Here is an equation.
-
-\begin{equation} 
-  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
-  \label{eq:binom}
-\end{equation}
-
-You may refer to using \texttt{\textbackslash{}@ref(eq:binom)}, like see Equation \eqref{eq:binom}.
-
-\hypertarget{theorems-and-proofs}{%
-\section{Theorems and proofs}\label{theorems-and-proofs}}
-
-Labeled theorems can be referenced in text using \texttt{\textbackslash{}@ref(thm:tri)}, for example, check out this smart theorem \ref{thm:tri}.
-
-\begin{theorem}
-\protect\hypertarget{thm:tri}{}\label{thm:tri}For a right triangle, if \(c\) denotes the \emph{length} of the hypotenuse
-and \(a\) and \(b\) denote the lengths of the \textbf{other} two sides, we have
-\[a^2 + b^2 = c^2\]
-\end{theorem}
-
-Read more here \url{https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html}.
-
-\hypertarget{callout-blocks}{%
-\section{Callout blocks}\label{callout-blocks}}
-
-The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: \url{https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html}
-
-\hypertarget{sharing-your-book}{%
-\chapter{Sharing your book}\label{sharing-your-book}}
-
-\hypertarget{publishing}{%
-\section{Publishing}\label{publishing}}
-
-HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
-
-\hypertarget{pages}{%
-\section{404 pages}\label{pages}}
-
-By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
-
-\hypertarget{metadata-for-sharing}{%
-\section{Metadata for sharing}\label{metadata-for-sharing}}
-
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
-
-This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
-
-Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
-
-Read more about the features of this output format here:
-
-\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
-
-Or use:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
-\end{Highlighting}
-\end{Shaded}
-
-
-  \bibliography{book.bib,packages.bib}
+  \bibliography{book.bib}
 
 \end{document}
