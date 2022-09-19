@@ -1,0 +1,36 @@
+# Method
+
+This section describes the zoning standard and the analysis method. This will be the 
+
+## Zoning standard
+
+Describe the zoning standard
+
+## Analysis of accessory dwelling unit capacity
+
+Describe both a naive approach that would be the best you can do with other methods
+and the approach we could take with this data.
+
+### Naive approach
+
+Best you could do with a spreadsheet
+
+### Proposed approach
+
+Figures and tables *with captions* can also be cross-referenced from elsewhere in your book using `\@ref(fig:chunk-label)` and `\@ref(tab:chunk-label)`, respectively.
+
+See Figure \@ref(fig:nice-fig).
+
+```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center', fig.alt='Plot with connected points showing that vapor pressure of mercury increases exponentially as temperature increases.'}
+par(mar = c(4, 4, .1, .1))
+plot(pressure, type = 'b', pch = 19)
+```
+
+Don't miss Table \@ref(tab:nice-tab).
+
+```{r nice-tab, tidy=FALSE}
+knitr::kable(
+  head(pressure, 10), caption = 'Here is a nice table!',
+  booktabs = TRUE
+)
+```

@@ -1,0 +1,6 @@
+# Results
+
+This section will show the ADU capacity of a place based on the two approaches
+described in the methods section.
+
+
