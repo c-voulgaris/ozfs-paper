@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2 Method | A Proposed Data Standard for Municipal Zoning Regulations</title>
   <meta name="description" content="Open Zoning" />
-  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2 Method | A Proposed Data Standard for Municipal Zoning Regulations" />
   <meta property="og:type" content="book" />
@@ -22,14 +22,14 @@
 
 
 
-<meta name="date" content="2022-09-19" />
+<meta name="date" content="2022-10-31" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="literature-review.html"/>
+<link rel="prev" href="index.html"/>
 <link rel="next" href="results.html"/>
 <style type="text/css">
 p.abstract{
@@ -142,17 +142,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">A Minimal Book Example</a></li>
+<li><a href="./">Open Zoning</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="literature-review.html"><a href="literature-review.html"><i class="fa fa-check"></i><b>1</b> Literature review</a>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Literature review</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="literature-review.html"><a href="literature-review.html#prior-and-current-efforts-to-digitize-zoning-data"><i class="fa fa-check"></i><b>1.1</b> Prior and current efforts to digitize zoning data</a></li>
-<li class="chapter" data-level="1.2" data-path="literature-review.html"><a href="literature-review.html#other-open-data-standards-for-local-government"><i class="fa fa-check"></i><b>1.2</b> Other open data standards for local government</a></li>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#prior-and-current-efforts-to-digitize-zoning-data"><i class="fa fa-check"></i><b>1.1</b> Prior and current efforts to digitize zoning data</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#other-open-data-standards-for-local-government"><i class="fa fa-check"></i><b>1.2</b> Other open data standards for local government</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="method.html"><a href="method.html"><i class="fa fa-check"></i><b>2</b> Method</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="method.html"><a href="method.html#zoning-standard"><i class="fa fa-check"></i><b>2.1</b> Zoning standard</a></li>
+<li class="chapter" data-level="2.1" data-path="method.html"><a href="method.html#zoning-standard"><i class="fa fa-check"></i><b>2.1</b> Zoning standard</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="method.html"><a href="method.html#core-constraints"><i class="fa fa-check"></i><b>2.1.1</b> Core constraints</a></li>
+</ul></li>
 <li class="chapter" data-level="2.2" data-path="method.html"><a href="method.html#analysis-of-accessory-dwelling-unit-capacity"><i class="fa fa-check"></i><b>2.2</b> Analysis of accessory dwelling unit capacity</a>
 <ul>
 <li class="chapter" data-level="2.2.1" data-path="method.html"><a href="method.html#naive-approach"><i class="fa fa-check"></i><b>2.2.1</b> Naive approach</a></li>
@@ -185,10 +188,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="method" class="section level1 hasAnchor" number="2">
 <h1><span class="header-section-number">2</span> Method<a href="method.html#method" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This section describes the zoning standard and the analysis method. This will be the</p>
+<p>This section describes the zoning standard and the analysis method. This may
+be the bulk of the paper.</p>
 <div id="zoning-standard" class="section level2 hasAnchor" number="2.1">
 <h2><span class="header-section-number">2.1</span> Zoning standard<a href="method.html#zoning-standard" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Describe the zoning standard</p>
+<div id="core-constraints" class="section level3 hasAnchor" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Core constraints<a href="method.html#core-constraints" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>OZFS begins with a set of core constraints: components that are necessary to
+establish the maximum allowable bulking or building envelope on any lot. Our
+work-in-progress list of these constraints are captured within an Airtable
+titled <a href="https://airtable.com/invite/l?inviteId=invIE9Rq8BJxoRZe9&amp;inviteToken=c24d20d82c00f933e02ca4d7f9b78088b2eaefcef049f3691df85eb48f858fbc&amp;utm_medium=email&amp;utm_source=product_team&amp;utm_content=transactional-alerts">OZFS schema</a>. (NOTE: Do I need to create an account to access this???)</p>
+<p>Each constraint is categorized into a core component of what is known as bulking, which is the process through which structures take their form on a lot within the modern-day zoning concept (the bucket is titled “core bulking component”). OpenZoning considers these components to be the core devices through which modern society has used zoning to conceptualize and abstract the tangible resource of land as discrete containers for bulks, i.e. structures and buildings. These containers are called lots – discrete areas of land plus the volumes of air above and earth beneath them – and are the base units of zoning. When applied to the lot, modern society’s conceptualization of land is executed through a set of components meant to control the realization of bulks (i.e. bulking) on these lots. They are:</p>
+<ul>
+<li>buildable area limits</li>
+<li>height limits</li>
+<li>structure envelopes</li>
+<li>number of structures</li>
+<li>types of structures</li>
+<li>relationship between structures</li>
+<li>number of units limits</li>
+<li>types of floor use</li>
+</ul>
+<p>This list is a work in progress, and correctly identifying these components is essential to OpenZoning’s goal of creating a standard machine-readable format that can accomodate the wide swathe of zoning codes that exist across America, and across the world.</p>
+</div>
 </div>
 <div id="analysis-of-accessory-dwelling-unit-capacity" class="section level2 hasAnchor" number="2.2">
 <h2><span class="header-section-number">2.2</span> Analysis of accessory dwelling unit capacity<a href="method.html#analysis-of-accessory-dwelling-unit-capacity" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -275,7 +298,7 @@ Figure 2.1: Here is a nice figure!
           </div>
         </div>
       </div>
-<a href="literature-review.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="results.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
@@ -307,8 +330,8 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/02-method.Rmd",
-"text": "Edit"
+"link": null,
+"text": null
 },
 "history": {
 "link": null,

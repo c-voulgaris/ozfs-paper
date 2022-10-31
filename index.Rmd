@@ -11,7 +11,7 @@ author:
   - name: Luke Reeve
     email: lukereeve@mde.harvard.edu
     affiliation: Harvard Graduate School of Design
-  - name: Elizabeth Christoforetty
+  - name: Elizabeth Christoforetti
     email: echristo@gsd.harvard.edu
     affiliation: Harvard Graduate School of Design
 address:
@@ -26,17 +26,28 @@ journal: "Environment and Planning B"
 bibliography: [book.bib]
 layout: "3p, authoryear, review"
 keywords:
-  - Accessibility
-  - Passive Data
-  - Location Choice
-  - Parks
+  - Zoning
+  - Open data
 abstract: |
  About 200 words. Unclear about if there is a limit 
 description: "Open Zoning"
 github-repo: c-voulgaris/ozfs-paper
 ---
 
-Introductory paragraphs
+Introductory text
+
+# Literature review
+
+Introduce the literature review
+
+## Prior and current efforts to digitize zoning data 
+
+Describe the National Zoning Atlas and affiliated teams, MAPC data, the Georgia Tech
+effort. Others?
+
+## Other open data standards for local government
+
+Describe GTFS, GBFS, MDS, OpenStreetMap others? Are there any examples not in mobility? 
 
 
 ```{r include=FALSE}
